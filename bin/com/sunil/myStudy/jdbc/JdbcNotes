@@ -1,0 +1,39 @@
+JDBC :- Java Database Connectivity or JDBC API provide industry standard and database independent connectivity b/w the java application and relational database servers.
+	* Databases like MySQL, Oracle, PostgreSQL, Microsoft SQL, MangoDB.
+	* JDBC allow a Java application to connect to a relational database.
+
+java.sql :-
+	Interfaces:-
+		Driver
+		Connection
+		Statement
+		PreparedStatement
+		CallableStatement
+		ResultSet
+		ResultSetMetaData
+		DataBaseMetaData
+		
+	Classes :-
+		DriverManager
+		Types
+		Date
+		Time
+		
+javax.sql :-
+	Interfaces :-
+		DataSource
+		RowSet
+	
+	Classes :-
+		RowSetEvent
+		
+Steps :-
+	Resister the driver
+	Creating connection
+	Creating Statement
+	Executing Queries
+	Closing connection
+	
+Edition :-
+	Enterprise edition
+	Express Edition

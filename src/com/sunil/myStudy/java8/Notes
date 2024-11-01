@@ -1,0 +1,71 @@
+Java 8 Features : 
+	
+	1.Lambda Expressions
+	2.Functional Interface
+	3.Default Methods and static methods
+	4.Predefined Functional Interfaces
+		Predicate
+		Function
+		Consumer
+		Supplier
+		etc
+	5.Double colon operator(::)
+		Method reference
+		Constructor reference
+	6.Streams
+	7.Date and Time API
+	8.Optional Class
+	9.Nashorn Javascript Engine
+	etc
+	
+	
+1.Lambda Expression :- It is an anonymous function which is nameless, without return type and without modifiers.
+	A lambda expression is a short block of code which takes in parameters and returns a value. 
+	Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the 
+	body of a method.
+	Lambda expression can implement an interface which contains a single abstract method(FI).
+	
+	Objective of Lambda Expression :
+		* To bring benefits of functional programming into Java.
+		
+2.Functional Interface :- Contains only single abstract method. It may contain multiple static and default methods.
+	Anonymous Inner class != Lambda expression
+	If Anonymous inner class implements an interface that contains single abstract method then only we can replace 
+	that anonymous inner class with lambda expression
+	
+	Predefined Functional Interface :-
+		Predicate<T> 		--> test() 		T parameter with return boolean
+		BiPredicate<T, U>	--> test()		T first parameter, U is second parameter return boolean
+		Function<T, R>  	--> apply()		T parameter with return R type
+		BiFunction<T, U, R>	--> apply()		T first parameter, U is second parameter return R type
+		Consumer<T>  		--> accept()	T parameter with No return type
+		BiConsumer<T, U>	--> accept()	T first parameter, U is second parameter No return type
+		Supplier<R>  		--> get()		No parameter with return R type
+		
+3.Anonymous Inner Class :- Anonymous Inner Class can extend a normal class.
+	Anonymous Inner Class can extend an abstract class.
+	Anonymous Inner Class can implement an interface which contains any number of abstract methods.
+	
+	
+4.Method and Constructor reference :- 
+	
+	
+5.Streams :-
+	streams() -> convert to streams
+	filter(Predicate) -> Filter elements using predicate function
+	map(Function)	-> Performing operations
+	collect(Collectors.toList) -> Convert to list
+	count() -> return number of elements.
+	sorted -> sort the Comparable object type elements.
+	sorted(Comparator<>)
+	min()
+	max()
+	forEach(Consumer)
+	
+	
+	Stream.of()
+	
+	
+	
+	
+	
