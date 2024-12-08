@@ -4,7 +4,7 @@
 *
 */
 
-package com.sunil.myStudy.java8.multiThreading;
+package com.sunil.myStudy.multiThreading;
 
 import java.util.Scanner;
 import java.util.concurrent.BlockingQueue;
@@ -61,10 +61,12 @@ public class MultiThreadingExample
 		
 		while(true)
 		{
-			Scanner scn = new Scanner(System.in);
-			System.out.print("Enter next thread : ");
-			int size = scn.nextInt();
-			thread(size, synQueue);
+			try (Scanner scn = new Scanner(System.in))
+			{
+				System.out.print("Enter next thread : ");
+				int size = scn.nextInt();
+				thread(size, synQueue);
+			}
 			Thread.sleep(5000);
 		}
 	}
@@ -76,6 +78,26 @@ public class MultiThreadingExample
 			System.out.println("--- "+i+" ---");
 			synQueue.put(new MyRunnable());
 		}
+	}
+
+}
+
+class MyRunnable implements Runnable
+{
+
+	@Override
+	public void run()
+	{
+//		try
+//		{
+//			Thread.sleep(5);
+//		}
+//		catch (InterruptedException e)
+//		{
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		System.out.println("Thread name : "+Thread.currentThread().getName());
 	}
 
 }

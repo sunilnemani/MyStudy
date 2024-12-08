@@ -21,6 +21,7 @@ public class ConstructorReference
 	{
 		
 		ConInter con = ConstructorClass::new;
+		System.out.println("Executing Constructor starts");
 		con.getObject();
 	}
 }
